@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/long3011/TravelCal.git'
+                git branch: 'main', url: 'https://github.com/long3011/TravelCal'
             }
         }
 
