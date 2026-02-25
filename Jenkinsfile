@@ -8,7 +8,7 @@ pipeline {
     environment {
           PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
           DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-          DOCKERHUB_REPO = 'amirdirin/lectdemo2026_3011'
+          DOCKERHUB_REPO = 'loooonnngg/TravelCal'
           DOCKER_IMAGE_TAG = 'v1'
       }
 
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/ADirin/Week6_3011_demo.git'
+                git 'https://github.com/long3011/TravelCal.git'
             }
         }
 
